@@ -7,6 +7,38 @@
     
     <link href="css/bootstrap.min.css" rel="stylesheet">
     
+    <style>
+        .accordion-item {
+            border: 1px solid #dee2e6;
+            margin-bottom: 15px;
+            border-radius: 8px !important;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .accordion-button {
+            background-color: #f8f9fa !important;
+            color: #0d6efd !important;
+            font-weight: 600;
+            padding: 15px 20px;
+            border: none;
+            width: 100%;
+            text-align: left;
+            display: block;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #e7f1ff !important;
+            color: #0c63e4 !important;
+        }
+        .accordion-body {
+            padding: 20px;
+            background-color: #fff;
+            line-height: 1.6;
+        }
+        .product-section {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
 
@@ -28,16 +60,16 @@
 
     <section id="home" class="hero-section text-center py-5">
         <div class="container">
-            <h1 class="display-4 fw-bold text-dark">Selamat Datang</h1>
-            <p class="lead">Berikut adalah koleksi mesin jahit antik kami yang paling berharga.</p>
-            <img src="image/mesin-jahit.jpg" alt="Mesin Jahit Antik" class="img-fluid rounded shadow" style="max-width: 350px;">
+            <h1 class="display-4 fw-bold text-dark mb-3">Selamat Datang</h1>
+            <p class="lead text-muted mb-4">Berikut adalah koleksi mesin jahit antik kami yang paling berharga.</p>
+            <img src="image/mesin-jahit.jpg" alt="Mesin Jahit Antik" class="img-fluid rounded shadow" style="max-width: 400px;">
         </div>
     </section>
 
-    <section id="product" class="py-5">
+    <section id="product" class="product-section bg-white">
         <div class="container text-center">
-            <h2 class="mb-4 text-primary">Mesin Jahit Kayu Klasik (Gaya Singer)</h2>
-            <h4 class="text-danger mb-4">Harga: RM850.00</h4>
+            <h2 class="mb-2 text-primary fw-bold">Mesin Jahit Kayu Klasik (Gaya Singer)</h2>
+            <h4 class="text-danger mb-5 fw-bold">Harga: RM850.00</h4>
             
             <div class="row justify-content-center">
                 <div class="col-md-8 text-start">
@@ -58,16 +90,16 @@
                         
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#spec">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#spec">
                                     Spesifikasi & Kondisi
                                 </button>
                             </h2>
-                            <div id="spec" class="accordion-collapse collapse" data-bs-parent="#jqmAccordion">
+                            <div id="spec" class="accordion-collapse collapse show" data-bs-parent="#jqmAccordion">
                                 <div class="accordion-body">
-                                    <strong>Tahun Keluaran:</strong> 1960-an <br>
-                                    <strong>Bahan:</strong> Kayu asli, besi padu, dan logam tembaga. <br>
-                                    <strong>Saiz:</strong> 70cm x 45cm <br>
-                                    <strong>Keadaan:</strong> Masih kukuh, kayunya terjaga rapi, dan mekanisme kayuhan kaki masih boleh berfungsi dengan baik.
+                                    <p class="mb-2"><strong>Tahun Keluaran:</strong> 1960-an</p>
+                                    <p class="mb-2"><strong>Bahan:</strong> Kayu asli, besi padu, dan logam tembaga.</p>
+                                    <p class="mb-2"><strong>Saiz:</strong> 70cm x 45cm</p>
+                                    <p class="mb-0"><strong>Keadaan:</strong> Masih kukuh, kayunya terjaga rapi, dan mekanisme kayuhan kaki masih boleh berfungsi dengan baik.</p>
                                 </div>
                             </div>
                         </div>
@@ -82,24 +114,24 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <h2 class="text-center mb-4">Borang Tempahan</h2>
-                    <form action="#" method="post" class="card p-4 shadow-sm">
+                    <h2 class="text-center mb-4 fw-bold">Borang Tempahan</h2>
+                    <form action="#" method="post" class="card p-4 shadow-sm border-0">
                         <div class="mb-3">
-                            <label for="nama" class="form-label">Nama Penuh:</label>
+                            <label for="nama" class="form-label fw-bold">Nama Penuh:</label>
                             <input type="text" class="form-control" id="nama" placeholder="Masukkan nama hg...">
                         </div>
                         <div class="mb-3">
-                            <label for="notel" class="form-label">Nombor Telefon:</label>
+                            <label for="notel" class="form-label fw-bold">Nombor Telefon:</label>
                             <input type="tel" class="form-control" id="notel" placeholder="Contoh: 0123456789">
                         </div>
                         <div class="mb-3">
-                            <label for="bayar" class="form-label">Cara Bayaran:</label>
+                            <label for="bayar" class="form-label fw-bold">Cara Bayaran:</label>
                             <select class="form-select" id="bayar">
                                 <option value="cod">Cash on Delivery (COD)</option>
                                 <option value="tf">Online Transfer</option>
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Hantar Pesanan</button>
+                        <button type="submit" class="btn btn-primary w-100 fw-bold py-2 mt-2">Hantar Pesanan</button>
                     </form>
                 </div>
             </div>
