@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Koleksi Antik Tok Wan</title>
+    <title>Hubungi Kami - Koleksi Antik Tok Wan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .custom-toggler-icon {
@@ -15,14 +15,10 @@
             background-size: 100% 100%;
             background-image: linear-gradient(to bottom, #fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%);
         }
-        .navbar-nav {
-            flex-direction: column !important;
-            width: 100%;
-        }
+        .navbar-nav { flex-direction: column !important; width: 100%; }
         .navbar-nav .nav-item { padding: 5px 0; }
         section { padding: 60px 0; }
         .tagline { font-style: italic; font-size: 0.9rem; color: #adb5bd; margin: 0; }
-        .slogan { font-style: italic; font-weight: bold; margin-top: 30px; color: #6c757d; }
     </style>
 </head>
 <body>
@@ -33,45 +29,48 @@
                 <a class="navbar-brand m-0 fw-bold d-block" href="index.html">Koleksi Antik Tok Wan</a>
                 <p class="tagline">- Setiap Barang Mempunyai Cerita -</p>
             </div>
-            
             <button class="navbar-toggler d-block" type="button" data-bs-toggle="collapse" data-bs-target="#menuDropdown" style="border-color: rgba(255,255,255,0.5);">
                 <span class="custom-toggler-icon"></span>
             </button>
-            
             <div class="collapse navbar-collapse w-100" id="menuDropdown">
                 <ul class="navbar-nav pt-3 border-top border-secondary mt-2">
-                    <li class="nav-item"><a class="nav-link active fw-bold text-primary" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="details.html">Maklumat Butiran</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Hubungi Kami</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold text-primary" href="contact.html">Hubungi Kami</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="text-center bg-white">
+    <section class="bg-white">
         <div class="container">
-            <h1 class="display-5 fw-bold text-dark mb-3">Selamat Datang</h1>
-            <p class="lead text-muted mb-4">Berikut adalah koleksi mesin jahit antik kami yang paling berharga.</p>
-            
-            <div class="mb-4">
-                <img src="image/mesin-jahit.jpg" alt="Mesin Jahit Kayu Klasik" class="img-fluid rounded shadow" style="max-width: 400px;">
-            </div>
-
             <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <h3 class="fw-bold text-dark mb-2">- Mesin Jahit Kayu Klasik (Gaya Singer) -</h3>
-                    <h4 class="text-danger fw-bold mb-3">HARGA : RM 850</h4>
-                    <p class="text-muted px-3" style="line-height: 1.7;">
-                        Warisan klasik yang membawa memori lama. Mesin jahit antik ini terkenal dengan 
-                        rekabentuk elegan serta ketahanan yang masih dikagumi hingga kini.
-                    </p>
-                    <p class="slogan">"Khazanah Lama, Nilai Selamanya"</p>
+                <div class="col-md-6">
+                    <h2 class="text-center mb-4 fw-bold">Borang Tempahan & Pertanyaan</h2>
+                    <form action="#" method="post" class="card p-4 shadow-sm border border-light">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label fw-bold">Nama Penuh:</label>
+                            <input type="text" class="form-control" id="nama" placeholder="Masukkan nama hg...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="notel" class="form-label fw-bold">Nombor Telefon:</label>
+                            <input type="tel" class="form-control" id="notel" placeholder="Contoh: 0123456789">
+                        </div>
+                        <div class="mb-3">
+                            <label for="bayar" class="form-label fw-bold">Cara Bayaran:</label>
+                            <select class="form-select" id="bayar">
+                                <option value="cod">Cash on Delivery (COD)</option>
+                                <option value="tf">Online Transfer</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 fw-bold py-2 mt-2">Hantar Pesanan</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-4 mt-5">
+    <footer class="bg-dark text-white text-center py-4">
         <div class="container">
             <p class="mb-2">&copy; 2026 Koleksi Antik Tok Wan. All Rights Reserved</p>
             <p class="mb-1" style="font-size: 0.9rem;"><strong>Location:</strong> No.45, Jalan Warisan 2, Taman Melaka, 75000 Melaka, Malaysia.</p>
